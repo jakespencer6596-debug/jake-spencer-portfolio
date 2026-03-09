@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Spencer | Senior Research & Developer</title>
+  <meta name="description" content="Jake Spencer - Senior Research & Developer leveraging AI and machine learning to better understand ecosystems, the environment, and better the world.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">JS</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-subtitle">Senior Research &amp; Developer</p>
+        <h1 class="hero-title">Jake Spencer</h1>
+        <p class="hero-description">Full-stack developer and conservation technology innovator building AI-powered tools for environmental organizations, government stakeholders, and a more sustainable world.</p>
+        <div class="hero-cta">
+          <a href="#research" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame">
+          <div class="hero-image-placeholder">
+            <span>Your Photo Here</span>
+          </div>
+          <!-- Replace the div above with: <img src="assets/images/hero-photo.jpg" alt="Jake Spencer"> -->
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <span>Photo</span>
+          </div>
+          <!-- Replace with: <img src="assets/images/about-photo.jpg" alt="Jake Spencer working"> -->
+        </div>
+        <div class="about-content">
+          <p class="about-lead">I'm a Senior Research &amp; Developer at <strong>Akorn Innovations</strong> with a track record of building AI-powered web tools that drive measurable conservation impact.</p>
+          <p>With a B.A. in Economics (Data Science concentration) from Lawrence University and minors in Computer Science and Innovation &amp; Entrepreneurship, I combine technical depth with strategic thinking. My work has contributed to a 400% increase in company revenue, produced 2 pending patents, and powered platforms that have gathered over 150,000 signatures for environmental policy action.</p>
+          <p>I've partnered with organizations like Pew Charitable Trusts, the Smithsonian, NOAA, and Blue Ocean Conservation to build tools that streamline research, amplify advocacy, and translate data into real-world outcomes.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="projectCount" data-target="8">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Patents Pending</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills / Focus Areas -->
+  <section class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Focus Areas</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p>Building AI-powered tools using OpenAI, Claude, NLP, and web scraping to automate research workflows and extract insights from complex datasets.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Full-Stack Development</h3>
+          <p>End-to-end web applications with JavaScript, Node.js, Express, Python, and cloud platforms like GCP, Heroku, and Render.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Conservation Tech</h3>
+          <p>Digital advocacy platforms, petition tools, and stakeholder engagement systems built for government agencies and environmental organizations.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Data &amp; Econometrics</h3>
+          <p>Statistical modeling, econometric analysis, and GIS mapping to quantify policy impacts and drive evidence-based environmental decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research / Projects Section -->
+  <section class="section projects" id="research">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">A selection of projects and applications I've contributed to.</p>
+      </div>
+      <div class="projects-grid" id="projects">
+        <div class="project-card">
+          <div class="project-image-placeholder">
+            <span>Project Screenshot</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Full-Stack</span>
+              <span class="tag">Conservation</span>
+            </div>
+            <h3>Menhaden Conservation Petition Platform</h3>
+            <p>Full-stack web application for a White House petition supporting an executive order to protect Atlantic forage fish. Received over 150,000 signatures and garnered national media attention.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-placeholder">
+            <span>Project Screenshot</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">AI / NLP</span>
+              <span class="tag">Taxonomy</span>
+            </div>
+            <h3>Marine Species Identification Tool</h3>
+            <p>AI-powered document processing application that extracts taxonomic data with 100% accuracy, reducing manual labor by 95%. One of two tools with patents pending.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-placeholder">
+            <span>Project Screenshot</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">AI / Web Scraping</span>
+              <span class="tag">Policy</span>
+            </div>
+            <h3>Marine Conservation Policy Database</h3>
+            <p>Built the first comprehensive U.S. marine conservation policy database for Pew Charitable Trusts, spanning federal to municipal levels. Reduced project timeline by 92% using AI-driven analysis.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-placeholder">
+            <span>Project Screenshot</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Stakeholder Tools</span>
+              <span class="tag">Outreach</span>
+            </div>
+            <h3>Stakeholder Interview Outreach Tool</h3>
+            <p>Subcontracted with Blue Ocean Conservation to build a tool that streamlined stakeholder engagement processes, achieving 300% increased engagement relative to comparable projects.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-placeholder">
+            <span>Project Screenshot</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Government</span>
+              <span class="tag">Civic Tech</span>
+            </div>
+            <h3>Government Petition Platforms</h3>
+            <p>Developed petition platforms for state and municipal governments including the City of Stamford, enabling digital civic engagement for conservation policy.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-placeholder">
+            <span>Project Screenshot</span>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Econometrics</span>
+              <span class="tag">Satellite Data</span>
+            </div>
+            <h3>GeoXO Satellite Economic Analysis</h3>
+            <p>Research on NOAA's GeoXO satellite data assessing economic benefits of improved ocean color observations for Harmful Algal Bloom mitigation. Authored 15+ research briefs.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section publications-section" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Research &amp; Publications</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Key research contributions and policy impact.</p>
+      </div>
+      <div class="publications-list">
+        <article class="publication-card">
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <h3>National Ocean Biodiversity Strategy</h3>
+            <p class="pub-authors">Spencer, J. &mdash; Akorn Environmental Consulting / Pew Charitable Trusts</p>
+            <p class="pub-journal">Research cited in 2025 implementation guidelines; contributed to executive order projected to add 3B+ lbs of fish to U.S. waters by 2030.</p>
+            <a href="#" class="pub-link">Learn More &rarr;</a>
+          </div>
+        </article>
+        <article class="publication-card">
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <h3>EPA Fisheries Conservation Analysis</h3>
+            <p class="pub-authors">Spencer, J. &mdash; Akorn Environmental Consulting</p>
+            <p class="pub-journal">Difference-in-differences and econometric regression modeling on fishery stock data for EPA conservation policy.</p>
+            <a href="#" class="pub-link">Learn More &rarr;</a>
+          </div>
+        </article>
+        <article class="publication-card">
+          <span class="pub-year">2024</span>
+          <div class="pub-content">
+            <h3>GeoXO Satellite Ocean Color Economic Assessment</h3>
+            <p class="pub-authors">Spencer, J. &mdash; TBD Economics / NOAA</p>
+            <p class="pub-journal">Comprehensive framework for Harmful Algal Bloom economic impact assessment. 15+ research briefs for stakeholder distribution.</p>
+            <a href="#" class="pub-link">Learn More &rarr;</a>
+          </div>
+        </article>
+        <article class="publication-card">
+          <span class="pub-year">2024</span>
+          <div class="pub-content">
+            <h3>Marine Biodiversity Policy Mapping</h3>
+            <p class="pub-authors">Spencer, J. et al. &mdash; Akorn / Smithsonian / NOAA</p>
+            <p class="pub-journal">Statistical analysis quantifying policy impacts across 35+ jurisdictions. Collaborated with 50+ stakeholders to map conservation networks.</p>
+            <a href="#" class="pub-link">Learn More &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">In the Field</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Photos from my research and fieldwork.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <div class="gallery-placeholder"><span>Photo 1</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Photo 2</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Photo 3</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Photo 4</span></div>
+        </div>
+        <div class="gallery-item large">
+          <div class="gallery-placeholder"><span>Photo 5</span></div>
+        </div>
+        <!-- Replace placeholders with: <img src="assets/images/gallery-1.jpg" alt="Description"> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- LinkedIn Embed Section -->
+  <section class="section linkedin-section" id="linkedin">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Connect on LinkedIn</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="linkedin-embed-wrapper">
+        <div class="linkedin-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <p>LinkedIn Profile Embed</p>
+          <p class="linkedin-note">Add your LinkedIn profile URL below to embed your profile badge.</p>
+          <!--
+            To embed your LinkedIn badge, replace this placeholder with:
+            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="YOUR-LINKEDIN-VANITY-URL" data-version="v1">
+              <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN-VANITY-URL">Jake Spencer</a>
+            </div>
+          -->
+        </div>
+        <a href="https://www.linkedin.com/in/" class="btn btn-linkedin" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          View Full LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Interested in collaborating or learning more about my work? Let's connect.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:jakespencer6596@gmail.com">jakespencer6596@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h4>Location</h4>
+              <p>Based in sunny St. Pete, FL &mdash; available for remote collaboration worldwide</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Jake Spencer. All rights reserved.</p>
+        <p class="footer-tagline">Building AI for a better world.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
