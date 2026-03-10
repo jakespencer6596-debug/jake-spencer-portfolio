@@ -4,403 +4,421 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jake Spencer | Senior Research & Developer</title>
-  <meta name="description" content="Jake Spencer - Senior Research & Developer leveraging AI and machine learning to better understand ecosystems, the environment, and better the world.">
+  <meta name="description" content="Jake Spencer - Full-stack developer and conservation technology innovator building AI-powered tools for environmental organizations and government stakeholders.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Cursor glow effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="nav-logo">JS</a>
+      <a href="#" class="nav-logo">
+        <span class="logo-text">jake<span class="logo-accent">.</span></span>
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#research">research</a></li>
+        <li><a href="#connect">connect</a></li>
+        <li><a href="#contact" class="nav-cta">let's talk</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero" id="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
     <div class="container hero-content">
-      <div class="hero-text">
-        <p class="hero-subtitle">Senior Research &amp; Developer</p>
-        <h1 class="hero-title">Jake Spencer</h1>
-        <p class="hero-description">Full-stack developer and conservation technology innovator building AI-powered tools for environmental organizations, government stakeholders, and a more sustainable world.</p>
-        <div class="hero-cta">
-          <a href="#research" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Get in Touch</a>
-        </div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to new opportunities
       </div>
-      <div class="hero-image">
-        <div class="hero-image-frame">
-          <div class="hero-image-placeholder">
-            <span>Your Photo Here</span>
-          </div>
+      <h1 class="hero-title">
+        <span class="hero-line">I build tech that</span>
+        <span class="hero-line hero-line-accent">protects our planet</span>
+      </h1>
+      <p class="hero-description">Jake Spencer &mdash; Senior Developer & Researcher specializing in AI-powered tools for conservation, environmental policy, and civic tech.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">
+          <span>See my work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jacob-spencer-7b6481237" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo">
+          <div class="hero-photo-placeholder">JS</div>
           <!-- Replace the div above with: <img src="assets/images/hero-photo.jpg" alt="Jake Spencer"> -->
         </div>
+        <div class="hero-photo-ring"></div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <a href="#about" aria-label="Scroll down">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
-      </a>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>AI &amp; Machine Learning</span>
+        <span class="marquee-dot"></span>
+        <span>Conservation Tech</span>
+        <span class="marquee-dot"></span>
+        <span>Full-Stack Development</span>
+        <span class="marquee-dot"></span>
+        <span>Environmental Policy</span>
+        <span class="marquee-dot"></span>
+        <span>Econometric Modeling</span>
+        <span class="marquee-dot"></span>
+        <span>GIS &amp; Spatial Data</span>
+        <span class="marquee-dot"></span>
+        <span>AI &amp; Machine Learning</span>
+        <span class="marquee-dot"></span>
+        <span>Conservation Tech</span>
+        <span class="marquee-dot"></span>
+        <span>Full-Stack Development</span>
+        <span class="marquee-dot"></span>
+        <span>Environmental Policy</span>
+        <span class="marquee-dot"></span>
+        <span>Econometric Modeling</span>
+        <span class="marquee-dot"></span>
+        <span>GIS &amp; Spatial Data</span>
+        <span class="marquee-dot"></span>
+      </div>
     </div>
   </header>
 
   <!-- About Section -->
   <section class="section about" id="about">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-grid">
-        <div class="about-image">
-          <div class="about-image-placeholder">
-            <span>Photo</span>
-          </div>
-          <!-- Replace with: <img src="assets/images/about-photo.jpg" alt="Jake Spencer working"> -->
+      <div class="about-layout">
+        <div class="about-left">
+          <span class="section-tag">About</span>
+          <h2 class="about-heading">Data-driven developer<br>on a mission to make<br>the world <em>better</em>.</h2>
         </div>
-        <div class="about-content">
-          <p class="about-lead">I'm a Senior Research &amp; Developer at <strong>Akorn Innovations</strong> with a track record of building AI-powered web tools that drive measurable conservation impact.</p>
-          <p>With a B.A. in Economics (Data Science concentration) from Lawrence University and minors in Computer Science and Innovation &amp; Entrepreneurship, I combine technical depth with strategic thinking. My work has contributed to a 400% increase in company revenue, produced 2 pending patents, and powered platforms that have gathered over 150,000 signatures for environmental policy action.</p>
-          <p>I've partnered with organizations like Pew Charitable Trusts, the Smithsonian, NOAA, and Blue Ocean Conservation to build tools that streamline research, amplify advocacy, and translate data into real-world outcomes.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">3+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number" id="projectCount" data-target="8">0</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">2</span>
-              <span class="stat-label">Patents Pending</span>
-            </div>
-          </div>
+        <div class="about-right">
+          <p class="about-lead">I'm a Senior Developer &amp; Researcher at <strong>Akorn Innovations</strong>, where I lead the Web Solutions Division integrating AI, machine learning, and web-based tools into conservation efforts.</p>
+          <p>With a B.A. in Economics (Data Science) from <strong>Lawrence University</strong> &mdash; plus minors in Computer Science and Innovation &amp; Entrepreneurship &mdash; I bridge the gap between technical innovation and environmental impact.</p>
+          <p>My work has helped grow company revenue by 400%, produced 2 pending patents, and powered platforms that collected 150,000+ signatures for environmental policy change.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Skills / Focus Areas -->
-  <section class="section skills-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Focus Areas</h2>
-        <div class="section-line"></div>
+      <!-- Stats Ticker -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-num">400%</span>
+          <span class="stat-label">Revenue growth</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">150K+</span>
+          <span class="stat-label">Petition signatures</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Patents pending</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">95%</span>
+          <span class="stat-label">Labor reduction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">35+</span>
+          <span class="stat-label">Jurisdictions analyzed</span>
+        </div>
       </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+
+      <!-- Skills Bento -->
+      <div class="skills-bento">
+        <div class="bento-card bento-wide">
+          <div class="bento-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
           <h3>AI &amp; Machine Learning</h3>
-          <p>Building AI-powered tools using OpenAI, Claude, NLP, and web scraping to automate research workflows and extract insights from complex datasets.</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <p>OpenAI, Claude API, NLP, web scraping, automated data pipelines</p>
+          <div class="bento-tags">
+            <span>Python</span><span>Beautiful Soup</span><span>Scrapy</span><span>NLP</span>
           </div>
-          <h3>Full-Stack Development</h3>
-          <p>End-to-end web applications with JavaScript, Node.js, Express, Python, and cloud platforms like GCP, Heroku, and Render.</p>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>Conservation Tech</h3>
-          <p>Digital advocacy platforms, petition tools, and stakeholder engagement systems built for government agencies and environmental organizations.</p>
+          <h3>Full-Stack</h3>
+          <p>JavaScript, Node.js, Express, HTML/CSS, SQL</p>
+          <div class="bento-tags">
+            <span>ES6+</span><span>React</span><span>APIs</span>
+          </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>GCP, Heroku, Render, Git, CI/CD</p>
+          <div class="bento-tags">
+            <span>Docker</span><span>GitHub Actions</span>
+          </div>
+        </div>
+        <div class="bento-card bento-accent">
+          <div class="bento-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Conservation &amp; Policy</h3>
+          <p>Petition platforms, civic tech, stakeholder tools, GIS mapping</p>
+          <div class="bento-tags">
+            <span>ArcGIS</span><span>QGIS</span><span>Stata</span><span>R</span>
+          </div>
+        </div>
+        <div class="bento-card bento-wide">
+          <div class="bento-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
           </div>
           <h3>Data &amp; Econometrics</h3>
-          <p>Statistical modeling, econometric analysis, and GIS mapping to quantify policy impacts and drive evidence-based environmental decisions.</p>
+          <p>Statistical modeling, difference-in-differences, regression analysis, economic impact assessment</p>
+          <div class="bento-tags">
+            <span>R</span><span>Python</span><span>Stata</span><span>SQL</span><span>Econometric Modeling</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Research / Projects Section -->
-  <section class="section projects" id="research">
+  <!-- Featured Work Section -->
+  <section class="section work-section" id="work">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Work</h2>
-        <div class="section-line"></div>
-        <p class="section-subtitle">A selection of projects and applications I've contributed to.</p>
+      <div class="section-header-row">
+        <div>
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-heading">Projects &amp; applications<br>I've built and shipped.</h2>
+        </div>
       </div>
-      <div class="projects-grid" id="projects">
-        <div class="project-card">
-          <div class="project-image-placeholder">
-            <span>Project Screenshot</span>
-          </div>
-          <div class="project-content">
+
+      <div class="project-showcase">
+        <!-- Project 1 - Featured Large -->
+        <div class="project-card project-featured">
+          <div class="project-number">01</div>
+          <div class="project-body">
             <div class="project-tags">
-              <span class="tag">Full-Stack</span>
-              <span class="tag">Conservation</span>
+              <span>Full-Stack</span><span>Conservation</span><span>150K+ Signatures</span>
             </div>
             <h3>Menhaden Conservation Petition Platform</h3>
-            <p>Full-stack web application for a White House petition supporting an executive order to protect Atlantic forage fish. Received over 150,000 signatures and garnered national media attention.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">View Project &rarr;</a>
-            </div>
+            <p>Full-stack web application powering a White House petition for an executive order to protect Atlantic forage fish. Received over 150,000 signatures and national media coverage.</p>
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="project-card">
-          <div class="project-image-placeholder">
-            <span>Project Screenshot</span>
-          </div>
-          <div class="project-content">
+          <div class="project-number">02</div>
+          <div class="project-body">
             <div class="project-tags">
-              <span class="tag">AI / NLP</span>
-              <span class="tag">Taxonomy</span>
+              <span>AI / NLP</span><span>Patent Pending</span>
             </div>
             <h3>Marine Species Identification Tool</h3>
-            <p>AI-powered document processing application that extracts taxonomic data with 100% accuracy, reducing manual labor by 95%. One of two tools with patents pending.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">View Project &rarr;</a>
-            </div>
+            <p>AI-powered document processing that extracts taxonomic data with 100% accuracy, reducing manual labor by 95%.</p>
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
         </div>
 
+        <!-- Project 3 -->
         <div class="project-card">
-          <div class="project-image-placeholder">
-            <span>Project Screenshot</span>
-          </div>
-          <div class="project-content">
+          <div class="project-number">03</div>
+          <div class="project-body">
             <div class="project-tags">
-              <span class="tag">AI / Web Scraping</span>
-              <span class="tag">Policy</span>
+              <span>AI</span><span>Web Scraping</span><span>Pew Trusts</span>
             </div>
             <h3>Marine Conservation Policy Database</h3>
-            <p>Built the first comprehensive U.S. marine conservation policy database for Pew Charitable Trusts, spanning federal to municipal levels. Reduced project timeline by 92% using AI-driven analysis.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">View Project &rarr;</a>
-            </div>
+            <p>The first comprehensive U.S. marine conservation policy database, spanning federal to municipal levels. Reduced project timeline by 92%.</p>
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
         </div>
 
+        <!-- Project 4 -->
         <div class="project-card">
-          <div class="project-image-placeholder">
-            <span>Project Screenshot</span>
-          </div>
-          <div class="project-content">
+          <div class="project-number">04</div>
+          <div class="project-body">
             <div class="project-tags">
-              <span class="tag">Stakeholder Tools</span>
-              <span class="tag">Outreach</span>
+              <span>Blue Ocean Conservation</span><span>Outreach</span>
             </div>
             <h3>Stakeholder Interview Outreach Tool</h3>
-            <p>Subcontracted with Blue Ocean Conservation to build a tool that streamlined stakeholder engagement processes, achieving 300% increased engagement relative to comparable projects.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">View Project &rarr;</a>
-            </div>
+            <p>Streamlined stakeholder engagement, achieving 300% increased engagement relative to comparable projects.</p>
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
         </div>
 
+        <!-- Project 5 -->
         <div class="project-card">
-          <div class="project-image-placeholder">
-            <span>Project Screenshot</span>
-          </div>
-          <div class="project-content">
+          <div class="project-number">05</div>
+          <div class="project-body">
             <div class="project-tags">
-              <span class="tag">Government</span>
-              <span class="tag">Civic Tech</span>
+              <span>Government</span><span>Civic Tech</span>
             </div>
             <h3>Government Petition Platforms</h3>
-            <p>Developed petition platforms for state and municipal governments including the City of Stamford, enabling digital civic engagement for conservation policy.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">View Project &rarr;</a>
-            </div>
+            <p>Petition platforms for state and municipal governments including the City of Stamford, enabling digital civic engagement.</p>
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
         </div>
 
+        <!-- Project 6 -->
         <div class="project-card">
-          <div class="project-image-placeholder">
-            <span>Project Screenshot</span>
-          </div>
-          <div class="project-content">
+          <div class="project-number">06</div>
+          <div class="project-body">
             <div class="project-tags">
-              <span class="tag">Econometrics</span>
-              <span class="tag">Satellite Data</span>
+              <span>NOAA</span><span>Econometrics</span><span>Satellite</span>
             </div>
             <h3>GeoXO Satellite Economic Analysis</h3>
-            <p>Research on NOAA's GeoXO satellite data assessing economic benefits of improved ocean color observations for Harmful Algal Bloom mitigation. Authored 15+ research briefs.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">View Project &rarr;</a>
-            </div>
+            <p>Economic assessment of improved satellite ocean color observations for Harmful Algal Bloom mitigation. Authored 15+ research briefs.</p>
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Publications Section -->
-  <section class="section publications-section" id="publications">
+  <!-- Research Timeline -->
+  <section class="section research-section" id="research">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Research &amp; Publications</h2>
-        <div class="section-line"></div>
-        <p class="section-subtitle">Key research contributions and policy impact.</p>
+      <div class="section-header-row">
+        <div>
+          <span class="section-tag">Research</span>
+          <h2 class="section-heading">Publications &amp; policy impact.</h2>
+        </div>
       </div>
-      <div class="publications-list">
-        <article class="publication-card">
-          <span class="pub-year">2025</span>
-          <div class="pub-content">
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-content">
             <h3>National Ocean Biodiversity Strategy</h3>
-            <p class="pub-authors">Spencer, J. &mdash; Akorn Environmental Consulting / Pew Charitable Trusts</p>
-            <p class="pub-journal">Research cited in 2025 implementation guidelines; contributed to executive order projected to add 3B+ lbs of fish to U.S. waters by 2030.</p>
-            <a href="#" class="pub-link">Learn More &rarr;</a>
+            <p class="timeline-org">Akorn Environmental Consulting / Pew Charitable Trusts</p>
+            <p>Research cited in 2025 implementation guidelines. Contributed to executive order projected to add 3B+ lbs of fish to U.S. waters by 2030.</p>
           </div>
-        </article>
-        <article class="publication-card">
-          <span class="pub-year">2025</span>
-          <div class="pub-content">
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-content">
             <h3>EPA Fisheries Conservation Analysis</h3>
-            <p class="pub-authors">Spencer, J. &mdash; Akorn Environmental Consulting</p>
-            <p class="pub-journal">Difference-in-differences and econometric regression modeling on fishery stock data for EPA conservation policy.</p>
-            <a href="#" class="pub-link">Learn More &rarr;</a>
+            <p class="timeline-org">Akorn Environmental Consulting</p>
+            <p>Difference-in-differences and econometric regression modeling on fishery stock data for EPA conservation policy.</p>
           </div>
-        </article>
-        <article class="publication-card">
-          <span class="pub-year">2024</span>
-          <div class="pub-content">
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content">
             <h3>GeoXO Satellite Ocean Color Economic Assessment</h3>
-            <p class="pub-authors">Spencer, J. &mdash; TBD Economics / NOAA</p>
-            <p class="pub-journal">Comprehensive framework for Harmful Algal Bloom economic impact assessment. 15+ research briefs for stakeholder distribution.</p>
-            <a href="#" class="pub-link">Learn More &rarr;</a>
+            <p class="timeline-org">TBD Economics / NOAA</p>
+            <p>Comprehensive framework for Harmful Algal Bloom economic impact assessment. Authored 15+ research briefs for stakeholder distribution.</p>
           </div>
-        </article>
-        <article class="publication-card">
-          <span class="pub-year">2024</span>
-          <div class="pub-content">
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content">
             <h3>Marine Biodiversity Policy Mapping</h3>
-            <p class="pub-authors">Spencer, J. et al. &mdash; Akorn / Smithsonian / NOAA</p>
-            <p class="pub-journal">Statistical analysis quantifying policy impacts across 35+ jurisdictions. Collaborated with 50+ stakeholders to map conservation networks.</p>
-            <a href="#" class="pub-link">Learn More &rarr;</a>
+            <p class="timeline-org">Akorn / Smithsonian / NOAA</p>
+            <p>Statistical analysis quantifying policy impacts across 35+ jurisdictions. Collaborated with 50+ stakeholders to map conservation networks.</p>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="section gallery-section" id="gallery">
+  <!-- Partners / Collaborators -->
+  <section class="section partners-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">In the Field</h2>
-        <div class="section-line"></div>
-        <p class="section-subtitle">Photos from my research and fieldwork.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item large">
-          <div class="gallery-placeholder"><span>Photo 1</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder"><span>Photo 2</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder"><span>Photo 3</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder"><span>Photo 4</span></div>
-        </div>
-        <div class="gallery-item large">
-          <div class="gallery-placeholder"><span>Photo 5</span></div>
-        </div>
-        <!-- Replace placeholders with: <img src="assets/images/gallery-1.jpg" alt="Description"> -->
+      <p class="partners-label">Trusted by and partnered with</p>
+      <div class="partners-row">
+        <span>Pew Charitable Trusts</span>
+        <span>Smithsonian</span>
+        <span>NOAA</span>
+        <span>Blue Ocean Conservation</span>
+        <span>EPA</span>
+        <span>City of Stamford</span>
       </div>
     </div>
   </section>
 
-  <!-- LinkedIn Embed Section -->
-  <section class="section linkedin-section" id="linkedin">
+  <!-- Connect / LinkedIn Section -->
+  <section class="section connect-section" id="connect">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Connect on LinkedIn</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="linkedin-embed-wrapper">
-        <div class="linkedin-placeholder">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          <p>LinkedIn Profile Embed</p>
-          <p class="linkedin-note">Add your LinkedIn profile URL below to embed your profile badge.</p>
-          <!--
-            To embed your LinkedIn badge, replace this placeholder with:
+      <div class="connect-card">
+        <div class="connect-left">
+          <span class="section-tag">Connect</span>
+          <h2 class="connect-heading">Let's connect on LinkedIn.</h2>
+          <p>I'm always open to interesting conversations about conservation tech, AI, and building tools that matter.</p>
+          <a href="https://www.linkedin.com/in/jacob-spencer-7b6481237" target="_blank" rel="noopener" class="btn btn-linkedin">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>View my LinkedIn</span>
+          </a>
+        </div>
+        <div class="connect-right">
+          <div class="linkedin-badge-wrapper">
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="YOUR-LINKEDIN-VANITY-URL" data-version="v1">
-              <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN-VANITY-URL">Jake Spencer</a>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="jacob-spencer-7b6481237" data-version="v1">
+              <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jacob-spencer-7b6481237">Jacob (Jake) Spencer</a>
             </div>
-          -->
+          </div>
         </div>
-        <a href="https://www.linkedin.com/in/" class="btn btn-linkedin" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          View Full LinkedIn Profile
-        </a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="section contact" id="contact">
+  <section class="section contact-section" id="contact">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="section-line"></div>
-        <p class="section-subtitle">Interested in collaborating or learning more about my work? Let's connect.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:jakespencer6596@gmail.com">jakespencer6596@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>
-              <h4>Location</h4>
-              <p>Based in sunny St. Pete, FL &mdash; available for remote collaboration worldwide</p>
-            </div>
-          </div>
-          <div class="contact-social">
-            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <h2 class="contact-heading">Got a project?<br>Let's build<br>something <em>great</em>.</h2>
+          <div class="contact-details">
+            <a href="mailto:jakespencer6596@gmail.com" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              jakespencer6596@gmail.com
             </a>
-            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <div class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Based in sunny St. Pete, FL
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/jacob-spencer-7b6481237" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/jakespencer6596-debug" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             </a>
           </div>
         </div>
         <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
           </div>
           <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
-            <input type="text" name="subject" placeholder="Subject">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
           </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
         </form>
       </div>
     </div>
@@ -408,11 +426,12 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 Jake Spencer. All rights reserved.</p>
-        <p class="footer-tagline">Building AI for a better world.</p>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="nav-logo"><span class="logo-text">jake<span class="logo-accent">.</span></span></span>
+        <p>Building AI for a better world.</p>
       </div>
+      <p class="footer-copy">&copy; 2026 Jake Spencer. All rights reserved.</p>
     </div>
   </footer>
 

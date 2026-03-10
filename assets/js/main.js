@@ -1,85 +1,94 @@
 // ========================================
-// Jake Spencer Portfolio - Main JS
+// Jake Spencer Portfolio - V2
 // ========================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Navbar scroll behavior
-  const navbar = document.getElementById('navbar');
-  const handleScroll = () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-  };
-  window.addEventListener('scroll', handleScroll);
 
-  // Mobile nav toggle
+  // ---- Navbar scroll ----
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // ---- Mobile nav toggle ----
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
   if (navToggle) {
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => navLinks.classList.remove('active'));
-    });
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    navLinks.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', () => navLinks.classList.remove('active'))
+    );
   }
 
-  // Scroll-triggered fade-in animations
-  const fadeElements = document.querySelectorAll('.section-header, .skill-card, .project-card, .publication-card, .about-grid, .contact-grid, .gallery-item, .linkedin-embed-wrapper');
-  fadeElements.forEach(el => el.classList.add('fade-in'));
+  // ---- Cursor glow ----
+  const glow = document.getElementById('cursorGlow');
+  if (glow && window.innerWidth > 768) {
+    let mx = 0, my = 0, cx = 0, cy = 0;
+    document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
+    (function render() {
+      cx += (mx - cx) * 0.08;
+      cy += (my - cy) * 0.08;
+      glow.style.left = cx + 'px';
+      glow.style.top = cy + 'px';
+      requestAnimationFrame(render);
+    })();
+  }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+  // ---- Scroll reveal ----
+  const revealEls = document.querySelectorAll(
+    '.section-tag, .about-heading, .about-right, .stat-item, .bento-card, ' +
+    '.section-header-row, .project-card, .timeline-item, .partners-row, ' +
+    '.connect-card, .contact-heading, .contact-details, .contact-form, ' +
+    '.hero-badge, .hero-title, .hero-description, .hero-cta, .hero-photo-wrapper'
+  );
+
+  revealEls.forEach(el => el.classList.add('reveal'));
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        // Stagger siblings
+        const siblings = entry.target.parentElement.querySelectorAll('.reveal:not(.visible)');
+        const idx = [...siblings].indexOf(entry.target);
+        setTimeout(() => entry.target.classList.add('visible'), idx * 80);
+        revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  fadeElements.forEach(el => observer.observe(el));
+  revealEls.forEach(el => revealObserver.observe(el));
 
-  // Animate stat numbers
-  const animateCount = (el, target) => {
-    let current = 0;
-    const step = Math.ceil(target / 40);
-    const timer = setInterval(() => {
-      current += step;
-      if (current >= target) {
-        el.textContent = target;
-        clearInterval(timer);
-      } else {
-        el.textContent = current;
-      }
-    }, 30);
-  };
+  // Make hero elements visible immediately with stagger
+  const heroEls = document.querySelectorAll('.hero .reveal');
+  heroEls.forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 200 + i * 120);
+  });
 
-  const statObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const projectCount = document.getElementById('projectCount');
-        const paperCount = document.getElementById('paperCount');
-        if (projectCount) animateCount(projectCount, parseInt(projectCount.dataset.target || '0'));
-        if (paperCount) animateCount(paperCount, parseInt(paperCount.dataset.target || '0'));
-        statObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  const statsSection = document.querySelector('.about-stats');
-  if (statsSection) statObserver.observe(statsSection);
-
-  // Contact form (basic handler - replace with actual backend)
+  // ---- Contact form ----
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = 'Message Sent!';
-      btn.style.background = '#1a5632';
+      const origHTML = btn.innerHTML;
+      btn.innerHTML = '<span>Sent!</span>';
+      btn.style.background = 'linear-gradient(135deg, var(--sunset-orange), var(--sunset-amber))';
       setTimeout(() => {
-        btn.textContent = 'Send Message';
+        btn.innerHTML = origHTML;
         btn.style.background = '';
         form.reset();
       }, 3000);
     });
   }
+
+  // ---- Smooth anchor scroll ----
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
 });
